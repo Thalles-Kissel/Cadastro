@@ -7,34 +7,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="centralizar">
+            <h1>Faça seu cadastro</h1>
+        </div>
 
-    <div class="centralizar">
-        <h1>Faça seu cadastro</h1>
-    </div>
 
+        <div id="input">
+            
+            <form action="#" method="post">
+            <label for="Nome">Nome:</label>
+            <input type="text" name="Nome" id="Nome" placeholder="Digite seu nome">
+        
+            <br><br>
+            
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" id="Email" placeholder="Digite seu Email:">
 
-    <div id="input">
-        <form action="#" method="post">
-        <label for="Nome">Nome:</label>
-        <input type="text" name="Nome" id="Nome" placeholder="Digite seu nome">
-    
-        <br><br>
-        
-        <label for="Senha">Senha:</label>
-        <input type="password" name="Senha" id="Senha" placeholder="Digite sua senha">
+            <br><br>
+
+            <label for="Senha">Senha:</label>
+            <input type="password" name="Senha" id="Senha" placeholder="Digite sua senha">
+
+            <br> <br>
+
+            <label for="Idade">Idade:</label>
+            <input type="number" name="Idade" id="Idade" placeholder="idade" min="18" max="100" class="small-input">
+
+            <br> <br>
+
+            <label for="Termos">Aceito os termos</label>
+            <input type="checkbox" name="Termos" id="Termos">
+    </header>
 
         <br><br>
+
+        <div class="centralizar">
+            <h1>Outras informaçoes</h1>
+        </div>
         
-        <label for="Email">Email:</label>
-        <input type="email" name="Email" id="Email" placeholder="Digite seu Email:">
-    
-        <br><br>
-        
-        <label for="Idade">Idade:</label>
-        <input type="number" name="Idade" id="Idade" placeholder="idade" min="18" max="100" class="small-input">
-    
-        <br><br>
-        
+    <fieldset>
+
         <label for="website"></label>
         <input type="url" name="Website" id="" placeholder="https://">
    
@@ -45,10 +58,6 @@
 
         <br><br>
 
-        <label for="Termos">Aceito os termos</label>
-        <input type="checkbox" name="Termos" id="Termos">
-    
-        <br><br>
         
         <label for="Genero">Gênero</label>
 
@@ -101,6 +110,7 @@
         <br><br>
 
         <button type="submit">Enviar</button>
+    </fieldset>
 
     </div>
     </form>
