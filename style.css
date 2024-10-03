@@ -6,22 +6,30 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* animation: mudarcores 4s infinite; */
 }
 
 h1{
     text-align: center;
     animation: mudarcores 2s infinite;
-    background-color: #000000;
+    background-color: #1b1c1bb1;
     padding: 2px;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 0 30px#000000;
     
 }
 
 .centralizar{
     text-align: center;
+}
+fieldset{
+    border: none;
+    box-shadow: 0 0 10px rgb(255, 145, 0);
+    background-color: rgba(255, 208, 0, 0.637);
+    padding: 25px;
+    border-radius: 9px;
+    margin: auto;
+    max-width: 400px;
 }
 
 form{
@@ -31,7 +39,6 @@ form{
     border-radius: 9px;
     margin: auto;
     max-width: 400px;
-    
 }
 
 input{
@@ -71,6 +78,7 @@ input[type="range"]{
 
 input[type="checkbox"],
 input[type="radio"]{
+    border-radius: 10px;
     margin-right: 5px;
 }
 
@@ -109,6 +117,8 @@ button:hover{
     margin-right: 10px;
 }
 
+
+
 @keyframes mudarcores{
     0%, 100%{
         transform: translateY(0);
@@ -116,7 +126,7 @@ button:hover{
     }
     25% {
         transform: translateY(-10px);
-        color: rgba(112, 184, 212, 0.753);
+        color: rgba(112, 184, 212, 0);
     }
     /* 
     50% {
@@ -125,6 +135,14 @@ button:hover{
     }
     75% {
         transform: translateY(10px);
+        color: #4572ee;
+    } */
+    
+    100%{
+        color: #ffffff;
+        transform: translateY(5px);
+    }
+}
         color: #4572ee;
     } */
     
